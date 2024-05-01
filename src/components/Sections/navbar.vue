@@ -1,5 +1,5 @@
 <template>
-    <div class="cont cont-color rounded-3xl center">
+    <div @mouseover="show()" :class="{'hide': hide}" class="cont cont-color rounded-3xl center">
         <div class="intra flex justify-between items-center">
             <svg @click="scrollToSection('home')" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30" color="#ffffff" fill="none">
                 <path d="M15.0001 17C14.2006 17.6224 13.1504 18 12.0001 18C10.8499 18 9.79965 17.6224 9.00012 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
@@ -24,16 +24,38 @@
     </div>
 </template>
 <script setup>
+import {ref, onMounted } from 'vue';
+
+const hide = ref(false);
 const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
     }
 }
+const hiddeNavigation = () =>{
+    setTimeout(() => {
+        hide.value = true;
+        console.log('hide')
+    }, 3000);
+}
+const show = () =>{
+    hide.value = false;
+    setTimeout(() => {
+        hiddeNavigation()
+    }, 3000);
+}
+onMounted(() => {
+    hiddeNavigation()
+})
 </script>
 
 <style scoped>
+.hide{
+    animation: hideFromBottom 1.5s ease forwards !important;
+}
 .cont {
+    border: 1px solid #000;
     width: 16%;
     height: 8vh;
     position: fixed;
@@ -57,10 +79,19 @@ svg:hover{
 
 @keyframes slideFromBottom {
     from {
-        transform: translateY(190%) translateX(-50%);
+        transform: translateY(140%) translateX(-50%);
     }
     to {
         transform: translateY(0) translateX(-50%);
+    }
+}
+
+@keyframes hideFromBottom {
+    from {
+        transform: translateY(0) translateX(-50%);
+    }
+    to {
+        transform: translateY(140%) translateX(-50%);
     }
 }
 </style>
