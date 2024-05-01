@@ -17,10 +17,10 @@
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
             </button>
-            <burron class="card" onclick="portfolio.showModal()">
+            <button class="card" onclick="portfolio.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
-            </burron>
+            </button>
             <button class="card" onclick="administrative.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
