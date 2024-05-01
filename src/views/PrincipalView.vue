@@ -1,10 +1,10 @@
 <template>
     <main>
-        <headerComp/>
+        <headerComp id="home"/>
         <presentationComp/>
-        <worksComp/>
-        <experience/>
-        <personal/>
+        <worksComp />
+        <experience id="experience"/>
+        <personal id="aboutme"/>
         <div style="height: 50vh"></div>
     </main>
     <alert/>

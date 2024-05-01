@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section id="proyects">
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
             <button class="card" onclick="veterinary.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
