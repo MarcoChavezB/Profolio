@@ -1,69 +1,58 @@
 <template>
     <section>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
-            <button onclick="modal1.showModal()">
+            <button class="card" onclick="veterinary.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
             </button>
-            <dialog id="modal1" class="modal">
-                <div class="modal-box1" style="height: 100%; width: 90rem">
-                    <div class="h-full flex flex-col">
-                        <div>
-                            <form method="dialog">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-                            </form>
-                            <h3 class="font-bold text-lg">modal 1!</h3>
-                        </div>
-                        <section class="grid gap-2" style="grid-template-columns: 4fr 3fr">
-                            <div class="images flex justify-center items-center">
-
-                            </div>
-                            <div class="text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis commodi quae fugit earum vel qui aperiam! Recusandae, quo suscipit adipisci quam corrupti, ullam nemo asperiores porro similique est quod aliquid.
-                            </div>
-                        </section>
-                    </div>
-
-                </div>
-            </dialog>
-
-
-            <div>
+            <button class="card" onclick="necklace.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
-            </div>
-            <div>
+            </button>
+            <button class="card" onclick="starcabo.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
-            </div>
-            <div>
+            </button>
+            <button class="card" onclick="dumb_e.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
-            </div>
-            <div>
+            </button>
+            <burron class="card" onclick="portfolio.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
-            </div>
-            <div>
+            </burron>
+            <button class="card" onclick="administrative.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
                     src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg" alt="">
-            </div>
-            <div>
-                <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg" alt="">
-            </div>
+            </button>
         </div>
     </section>
-    <modalWork id_modal="firstImage" />
+    <veterinaryModal/>
+    <necklaceModal/>
+    <starcaboModal/>
+    <dumb_e/>
+    <portfolio/>
+    <administrative/>
 </template>
+
+<script>
+import veterinaryModal from '../Sections/modalWork/veterinary.vue'
+import necklaceModal from '../Sections/modalWork/necklace.vue'
+import starcaboModal from './modalWork/starcabo.vue';
+import dumb_e from './modalWork/dumb_e.vue';
+import portfolio from  './modalWork/portfolio.vue';
+import administrative from './modalWork/administrative_software.vue';
+export default {
+    components:{
+        veterinaryModal,
+        necklaceModal,
+        starcaboModal,
+        dumb_e,
+        portfolio,
+        administrative
+    }
+}
+</script>
 
 <style scoped>
 section {
@@ -71,8 +60,6 @@ section {
 }
 
 .gray {
-    filter: grayscale(100%);
-    transition: filter 0.6s;
     cursor: pointer;
 }
 
@@ -80,25 +67,43 @@ img:hover {
     filter: grayscale(0%);
 }
 
-.modal-box1 {
-    grid-column-start: 1;
-    grid-row-start: 1;
-    --tw-scale-x: .9;
-    --tw-scale-y: .9;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    border-bottom-right-radius: var(--rounded-box, 1rem);
-    border-bottom-left-radius: var(--rounded-box, 1rem);
-    border-top-left-radius: var(--rounded-box, 1rem);
-    border-top-right-radius: var(--rounded-box, 1rem);
-    --tw-bg-opacity: 1;
-    background-color: #1a1a1a;
-    padding: 1.5rem;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 200ms;
-    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-    overflow-y: auto;
-    overscroll-behavior: contain;
+.card::before,
+.card::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.card::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+
+}
+
+.card::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100%  0 15px;
+}
+
+.card:hover::before,
+.card:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+.card:hover:after {
+  content: "Se more details";
 }
 </style>
