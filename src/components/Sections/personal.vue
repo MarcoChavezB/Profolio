@@ -59,7 +59,7 @@ export default {
 </script>
 <style scoped>
 .cont {
-    height: 30vh;
+    height: 50vh;
     grid-template-rows: 1fr 6fr;
     width: 80%;
 }

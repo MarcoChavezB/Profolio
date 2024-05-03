@@ -8,15 +8,33 @@
                     <path d="M8 12.5C8 12.5 9.5 12.5 11.5 16C11.5 16 17.0588 6.83333 22 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
+            <div class="socials flex gap-2">
+                <p>+52 624-264-70-89</p>
+            </div>
             <div class="get-in-touch">
-                <h2>Get in touch</h2>
+                <h2>Contact:</h2>
                 <p>marco1102004@gmail.com</p>
             </div>
         </div>
     </header>
 </template>
+<script setup>
+import LinkComp from '../controles/links.vue'
+</script>
+
 <style scoped>
+.socials{
+    color: #454444;
+    font-weight: 700;
+}
 header {
     height: 10vh;
+}
+
+
+@media screen and (max-width: 768px){
+    *{
+        font-size: 0.8rem;
+    }
 }
 </style>

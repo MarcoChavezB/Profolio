@@ -11,31 +11,31 @@
                 </div>
             </div>
             <aside class="grid gap-2">
-                <div class="cont">
+                <div @click="redirectTo('https://www.linkedin.com/in/marcochavezb/')" class="cont">
                     <div class="ico linkedin"></div>
                     <div class="name">
                         <p class="text-left rtl:text-right text-gray-500 dark:text-gray-400" style="background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #ffff, #0288d1);">Linkedin</p>
                     </div>
                 </div>
                 <div class="cont">
-                    <div class="ico github"></div>
+                    <div @click="redirectTo('https://github.com/MarcoChavezB')" class="ico github"></div>
                     <div class="name">
                             <p class="text-left rtl:text-right text-gray-500 dark:text-gray-400" style="background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #ffff, #0000);">Github</p>
                     </div>
                 </div>
-                <div class="cont">
+                <div @click="redirectTo('https://dribbble.com/akkakakakakak')" class="cont">
                     <div class="ico dribble"></div>
                     <div class="name">
                             <p class="text-left rtl:text-right text-gray-500 dark:text-gray-400" style="background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #ffff, #ed3675);">Dribble</p>
                     </div>
                 </div>
-                <div class="cont">
+                <div @click="redirectTo('https://www.facebook.com/profile.php?id=100008690471487')" class="cont">
                     <div class="ico facebook"></div>
                     <div class="name">
                             <p class="text-left rtl:text-right text-gray-500 dark:text-gray-400" style="background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #ffff, #3f51b5);">Facebook</p>
                     </div>
                 </div>
-                <div class="cont">
+                <div @click="redirectTo('https://www.instagram.com/marcoantoniocbvn/')" class="cont">
                     <div class="ico instagram"></div>
                     <div class="name">
                             <p class="text-left rtl:text-right text-gray-500 dark:text-gray-400" style="background-clip: text; -webkit-background-clip: text; color: transparent; background-image: linear-gradient(to right, #5761c3, #dc4283);">INSTAGRAM</p>
@@ -45,12 +45,23 @@
         </div>
     </section>
 </template>
+<script>
+export default {
+    methods: {
+        redirectTo(url) {
+            window.open(url, '_blank');
+        }
+    }
+}
+</script>
+
 <style scoped>
 .cont{  
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
     border-radius: 20px;
     background-color: #171717;
 }

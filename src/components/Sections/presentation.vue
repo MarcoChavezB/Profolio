@@ -1,22 +1,22 @@
 <template>
     <section class="w-full flex justify-center items-center">
-        <div class="cont intra-layout grid" style="grid-template-columns: 1fr 3fr;">
+        <div class="cont intra-layout grid">
             <div class="prof flex justify-center items-center">
                 <div class="intra-layout flex justify-center flex-col">
-                    <p>Web Developer</p>
-                    <p class="sub-text">from mexico</p>
+                    <p>Developer</p>
+                    <p class="sub-text">From Mexico</p>
                 </div>
             </div>
             <div class="about center">
-                <div class="intra-layout  flex justify-end flex-col">
-                    <div class="text" style="width: 53%">
+                <div class="intra-layout flex justify-end flex-col">
+                    <div class="text">
                         <p class="sub-text">Nice to meet you!</p>
                         <div class="flex gap-5">
-                            <p class="flex items-center">I'm</p>
-                            <span class="avatar"/>
-                            <p class="flex items-center">Marco. A pasionate</p>
+                            <p class="flex items-center ">I'm</p>
+                            <span class="flex avatar"/>
+                            <p class="flex justify-center items-center">Marco. I'm pasionate</p>
                         </div>
-                        <p>Software developer</p>
+                        <p>Software Developer.</p>
                     </div>
                 </div>
             </div>
@@ -25,11 +25,17 @@
 </template>
 
 <style scoped>
+
 section{
     height: 60vh;
 }
 .cont{
     border-bottom: 1px solid #191719;
+    grid-template-columns: 1fr 3fr;
+}
+
+.text{
+    width: 63%
 }
 .about p{
     font-size: 3rem;
@@ -44,5 +50,39 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+
+@media screen and (max-width: 768px){
+    section{
+        height: 50vh;
+    }
+    .cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+    .about p{
+        font-size: 2.5rem;
+    }
+    .text{
+        width: 100%;
+    }
+    .prof .intra-layout
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text p{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .avatar{
+        width: 80px;
+        height: 80px;
+    }
+    .text .flex{
+        gap: 0;
+    }
 }
 </style>

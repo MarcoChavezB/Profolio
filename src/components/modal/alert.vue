@@ -6,7 +6,7 @@
                 <div class="texto flex flex-col">
                     <code class="text-violet-500">Hi!</code>
                     <code>
-                        I'm <span class="text-green-500">Marco</span>, a student <span class="text-red-500">studying Systems</span>, actively seeking professional 
+                        I'm <span class="text-green-500">Marco</span>, a student <span class="text-red-500">of Systems</span>, actively seeking professional 
                         <span class="text-blue-500">internship opportunities</span>. Do you have an opportunity available? 
                         I would <span class="text-cyan-500">love to hear from you!</span>
                     </code>
@@ -74,6 +74,21 @@ section {
     }
     to {
         transform: translateX(190%);
+    }
+}
+@media screen and (max-width: 768px){
+    section{
+        width: 90%;
+        height: 20vh;
+        transform: translateY(0);
+        bottom: 2rem;
+        right: 0;
+    }
+    code{
+        font-size: 0.8rem;
+    }
+    .mockup-code{
+        height: 20vh;
     }
 }
 </style>

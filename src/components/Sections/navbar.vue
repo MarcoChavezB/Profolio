@@ -94,4 +94,21 @@ svg:hover{
         transform: translateY(140%) translateX(-50%);
     }
 }
+
+@media screen and (max-width: 768px){
+    .cont{
+        width: 50%;
+        bottom: 0.3rem;
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+    .intra{
+        width: 80%;
+    }
+    .hide, .cont{
+        animation: none !important;
+    }
+}
 </style>

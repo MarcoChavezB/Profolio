@@ -8,16 +8,14 @@
             </svg>
         </div>
         <article class="">
-            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">my Story great service experiences fast
-                -
-                without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate
-                toil,
-                and deploy changes with ease.</p>
-            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">Deliver great service experiences fast
-                -
-                without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate
-                toil,
-                and deploy changes with ease.</p>
+            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">
+                ¡Hola! Soy Marco, un entusiasta de la tecnología con una pasión por encontrar soluciones innovadoras a los desafíos del mundo real. Desde temprana 
+                edad, me he sentido intrigado por el potencial transformador de la tecnología y su capacidad para mejorar nuestras vidas.
+            </p>
+            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">
+                Me encanta explorar nuevas tecnologías y ponerlas en práctica para resolver problemas concretos. Recientemente, tuve la oportunidad de colaborar 
+                en un emocionante proyecto donde desarrollamos una solución para optimizar el sistema de gestión de inventario de una empresa local. Fue increíble ver cómo nuestras ideas y esfuerzos se tradujeron en mejoras tangibles para el negocio.
+            </p>
         </article>
     </section>
 </template>
@@ -25,5 +23,4 @@
 section{
     grid-template-columns: 1fr 2fr;
 }
-
 </style>

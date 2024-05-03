@@ -9,16 +9,14 @@
 </svg>
         </div>
         <article class="">
-            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">my Story great service experiences fast
-                -
-                without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate
-                toil,
-                and deploy changes with ease.</p>
-            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">Deliver great service experiences fast
-                -
-                without the complexity of traditional ITSM solutions. Accelerate critical development work, eliminate
-                toil,
-                and deploy changes with ease.</p>
+            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">
+                    Aparte de mi trabajo en tecnología, disfruto pasar tiempo al aire libre practicando ciclismo,
+                    es una parte importante para mantener un equilibrio. 
+            </p>
+            <p class="mb-4 text-xl font-normal text-gray-500 dark:text-gray-400">
+                Tambien tengo un gran interes por la electronica, es uno de mis hobbies favoritos, el ver halgo hecho por ti 
+                moverse es una sensacion facinante, aunque mi mas grande pasion siempre ha sido el desarrollo de software
+            </p>
         </article>
     </section>
 </template>

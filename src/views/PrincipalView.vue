@@ -5,7 +5,9 @@
         <worksComp />
         <experience id="experience"/>
         <personal id="aboutme"/>
-        <div style="height: 50vh"></div>
+        <div class="divider"></div>
+        <social/>
+
     </main>
     <alert/>
 </template>
@@ -17,4 +19,5 @@ import worksComp from '../components/Sections/works.vue'
 import experience from '../components/Sections/experience.vue'
 import personal from '../components/Sections/personal.vue'
 import alert from '../components/modal/alert.vue'
+import social from '../components/Sections/social.vue'
 </script>

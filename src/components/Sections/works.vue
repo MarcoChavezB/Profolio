@@ -3,27 +3,27 @@
         <div class="grid grid-cols-2 md:grid-cols-3 gap-4 m-4">
             <button class="card" onclick="veterinary.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg" alt="">
+                    src="../../assets/img/Proyects/vetMockup.jpg" alt="">
             </button>
             <button class="card" onclick="necklace.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
+                    src="../../assets/img/Proyects/mp4.png" alt="">
             </button>
             <button class="card" onclick="starcabo.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
+                    src="../../assets/img/Proyects/mp5.png" alt="">
             </button>
             <button class="card" onclick="dumb_e.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
+                    src="../../assets/img/Proyects/carmockup.jpg" alt="">
             </button>
-            <button class="card" onclick="portfolio.showModal()">
+            <button class="card" onclick="game.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
+                    src="../../assets/img/Proyects/battleshipmockup.jpg" alt="">
             </button>
             <button class="card" onclick="administrative.showModal()">
                 <img class="h-auto max-w-full rounded-lg gray"
-                    src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
+                    src="../../assets/img/Proyects/MenuProdMockup.jpg" alt="">
             </button>
         </div>
     </section>
@@ -40,7 +40,7 @@ import veterinaryModal from '../Sections/modalWork/veterinary.vue'
 import necklaceModal from '../Sections/modalWork/necklace.vue'
 import starcaboModal from './modalWork/starcabo.vue';
 import dumb_e from './modalWork/dumb_e.vue';
-import portfolio from  './modalWork/portfolio.vue';
+import portfolio from  './modalWork/game.vue';
 import administrative from './modalWork/administrative_software.vue';
 export default {
     components:{
